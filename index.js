@@ -17,7 +17,7 @@ app.use(cors({
 const api_key = process.env.LIFI_API_KEY
 const contractABI = abi
 const providerUrl = `https://arbitrum-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`;
-const contractAddress = '0xa7fb510e5d7235b3fc8c3d561f41938b52d339ff';
+const contractAddress = '0x3c8742f88b5c52d52e9dd39609169246a1e080f0';
 const provider = new JsonRpcProvider(providerUrl);
 const contract = new ethers.Contract(contractAddress, contractABI, provider);
 
